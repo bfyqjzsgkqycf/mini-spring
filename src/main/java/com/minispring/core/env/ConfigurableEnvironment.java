@@ -28,11 +28,7 @@ public interface ConfigurableEnvironment extends Environment {
      * @param profiles 默认的profiles数组
      */
     void setDefaultProfiles(String... profiles);
-
-    String[] getActiveProfiles();
-
-    String[] getDefaultProfiles();
-
+    
     /**
      * 获取系统属性
      * 
