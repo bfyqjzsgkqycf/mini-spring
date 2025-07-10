@@ -1,4 +1,4 @@
-package com.minispring.aop.support;
+package com.minispring.aop.framework;
 
 /**
  * TargetSource接口用于封装目标对象

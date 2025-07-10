@@ -1,4 +1,4 @@
-package com.minispring.aop.support;
+package com.minispring.aop.framework;
 
 import java.lang.reflect.Method;
 

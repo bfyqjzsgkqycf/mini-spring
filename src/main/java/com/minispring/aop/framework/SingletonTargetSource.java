@@ -1,4 +1,4 @@
-package com.minispring.aop.support;
+package com.minispring.aop.framework;
 
 /**
  * 单例目标源实现
