@@ -1,10 +1,7 @@
 package com.minispring.beans.factory.support;
 
 import com.minispring.beans.*;
-import com.minispring.beans.factory.BeanFactoryAware;
-import com.minispring.beans.factory.BeanNameAware;
-import com.minispring.beans.factory.DisposableBean;
-import com.minispring.beans.factory.InitializingBean;
+import com.minispring.beans.factory.*;
 import com.minispring.beans.factory.config.BeanDefinition;
 import com.minispring.beans.factory.config.BeanPostProcessor;
 import com.minispring.beans.factory.config.BeanReference;
@@ -280,4 +277,8 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         System.out.println("获取Bean[" + beanName + "]的早期引用");
         return exposedObject;
     }
+
+    public abstract BeanFactory getParentBeanFactory();
+
+    public abstract boolean containsLocalBean(String name);
 }
